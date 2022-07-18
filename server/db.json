@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "Spider-Man",
+        "price": 30,
+        "imageURL" : "https://m.media-amazon.com/images/I/518B2PBNkHL.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Batman Arkham Knight",
+        "price": 30,
+        "imageURL" : "https://thumbs.coleka.com/media/item/201704/07/playstation-4-ps4-batman-arkham-knight-game-of-the-year-edition.webp"
+      },
+      {
+        "id": 3,
+        "title": "God Of War",
+        "price": 40,
+        "imageURL" : "https://m.media-amazon.com/images/I/711lrrvzt+L._SL1496_.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Naruto Storm 4",
+        "price": 25,
+        "imageURL" : "https://m.media-amazon.com/images/I/81I4IWadtbL._SL1500_.jpg"
+      },
+      {
+        "id": 5,
+        "title": "The Last Of Us",
+        "price": 20,
+        "imageURL" : "https://i5.walmartimages.com/asr/cb12dedb-4aad-4fff-b5b9-54597eb41404_1.00fd2247a98ed1fe2b8181353069bc9a.jpeg"
+      },
+      {
+        "id": 6,
+        "title": "Uncharted",
+        "price": 50,
+        "imageURL" : "https://m.media-amazon.com/images/I/512lOnv679L.jpg"
+      },
+      {
+        "id": 7,
+        "title": "Horizon Foribidden West",
+        "price": 70,
+        "imageURL" : "https://www.psfanatic.com/wp-content/uploads/2020/06/Horizon-Forbidden-West-PS5-cover-new-credit-TheNinjaWhippet.jpg"
+      },
+      {
+        "id": 8,
+        "title": "Cyberpunk 2077",
+        "price": 35,
+        "imageURL" : "https://cdn11.bigcommerce.com/s-boldppk8jp/images/stencil/1280x1280/products/1289/1182/CyberPunk2077_PS4__51243.1595149904.jpg?c=1"
+      },
+      {
+        "id": 9,
+        "title": "Smash Bros Ultimate",
+        "price": 60,
+        "imageURL" : "https://upload.wikimedia.org/wikipedia/en/5/50/Super_Smash_Bros._Ultimate.jpg"
+      },
+      {
+        "id": 10,
+        "title": "Metroid Dread",
+        "price": 60,
+        "imageURL" : "https://images.nintendolife.com/7c1760474c995/metroid-dread-cover.cover_300x.jpg"
+      }
+    ]
