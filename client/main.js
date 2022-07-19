@@ -2,6 +2,11 @@ const complimentBtn = document.getElementById("complimentButton")
 const fortuneBtn = document.getElementById("fortuneButton")
 const gamesContainer = document.querySelector('#games-container')
 const form = document.querySelector('form')
+/*const deleteGame = id => {
+    axios.delete(`http://localhost:4000/api/games/${id}`)
+    .then(res => )
+}
+*/
 
 const getCompliment = () => {
     axios.get("http://localhost:4000/api/compliment/")
@@ -18,15 +23,15 @@ const getFortune = () => {
             alert(data);
 })
 }
-const baseURL = `http://localhost:4000/api/games/`
+const baseURL ="http://localhost:4000/api/games/"
 
 const gamesCallback = ({ data: games }) => displayGames(games)
 const errCallback = err => alert(err.response.data)
 
 const getAllGames = () => axios.get(baseURL).then(gamesCallback).catch(errCallback)
 const createGame = body => axios.post(baseURL, body).then(gamesCallback).catch(errCallback)
-const deleteGame = id => axios.delete(`${baseURL}/${id}`).then(gamesCallback).catch(errCallback)
-const updateGame = (id, type) => axios.put(`${baseURL}/${id}`, {type}).then(gamesCallback).catch(errCallback)
+const deleteGame = id => axios.delete(`${baseURL}${id}`).then(gamesCallback).catch(errCallback)
+const updateGame = (id, type) => axios.put(`${baseURL}${id}`, {type}).then(gamesCallback).catch(errCallback)
 
 function submitHandler(e) {
     e.preventDefault()
@@ -78,3 +83,4 @@ getAllGames()
 
 complimentBtn.addEventListener('click', getCompliment)
 fortuneBtn.addEventListener('click', getFortune)
+gamesContainer.addEventListener('click',  )

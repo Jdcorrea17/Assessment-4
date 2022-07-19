@@ -24,9 +24,14 @@ module.exports = {
     getGame: (req, res) => {
         res.status(200).send(games)
     },
+    // deleteGame: (req, res) => {
+    //     let index = games.findIndex(elem => elem.id === +req.params.id)
+    //     games.splice(index, 1)
+    //     res.status(200).send(games)
+// }
     deleteGame: (req, res) => {
-        let index = games.findIndex(elem => elem.id === +req.params.id)
-        games.splice(index, 1)
+        const {id} = (req.params.id)
+        games.splice(id, 1)
         res.status(200).send(games)
     },
     createGame: (req, res) => {
@@ -44,10 +49,10 @@ module.exports = {
 updateGame: (req, res) => {
     const {type} = req.body
     let index = games.findIndex(elem => elem.id === +req.params.id)
-    if(type === 'plus' && games[index].price > 90){
+    if(type === 'plus'){
         games[index].price += 10
         res.status(200).send(games)
-    } else if(type === 'minus' && games[index].price < 10){
+    } else if(type === 'minus'){
         games[index].price -= 10
         res.status(200).send(games)
     } else {

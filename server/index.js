@@ -10,9 +10,9 @@ const {getCompliment, getFortune, getGame, deleteGame, createGame, updateGame} =
 
 app.get("/api/compliment", getCompliment);
 app.get("/api/fortune", getFortune)
-app.get('/api/games', getGame)
-app.delete('/api/games/:id', deleteGame)
-app.post('/api/games', createGame)
-app.put('/api/games/:id', updateGame)
+app.get("/api/games", getGame)
+app.delete("/api/games/:id", deleteGame)
+app.post("/api/games", createGame)
+app.put("/api/games/:id", updateGame)
 
 app.listen(4000, () => console.log("Server running on 4000"));
